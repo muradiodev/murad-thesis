@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "name",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
+		"photo": "https://picsum.photos/480/480?1",
+		"price": 40,
+		"oldPrice": 50,
+		"discount": 20
+	},
+	{
+		"id": 2,
+		"name": "name 2",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
+		"photo": "https://picsum.photos/480/480?2",
+		"price": 76.5,
+		"oldPrice": 90,
+		"discount": 15
+	},
+	{
+		"id": 3,
+		"name": "name 2",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
+		"photo": "https://picsum.photos/480/480?3",
+		"price": 90,
+		"oldPrice": 100,
+		"discount": 10
+	},
+	{
+		"id": 4,
+		"name": "name 2",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
+		"photo": "https://picsum.photos/480/480?4",
+		"price": 40,
+		"oldPrice": 40,
+		"discount": 0
+	}
+]
