@@ -1,38 +1,38 @@
 [
 	{
 		"id": 1,
-		"name": "name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?1"
+		"name": "NEW IN",
+		"description": "Say hello to our just-landed pieces for spring/summer 21! Full of unique designs to suit your personal style. ",
+		"photo": "https://stylesatlife.com/wp-content/uploads/2020/04/modern-contemporary-bedroom-furniture.jpg"
 	},
 	{
 		"id": 2,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?2"
+		"name": "DINING",
+		"description": "The designer dining table T 70, designed by Martin Ballendat for hülsta, is a masterpiece in its plain beauty and has been given the red dot award 2017. ",
+		"photo": "https://www.my-furniture.com/media/wysiwyg/blocks/en/dining-en.jpg"
 	},
 	{
 		"id": 3,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?3"
+		"name": "OCCASIONAL CHAIRS",
+		"description": "Enjoy flat-fee unlimited furniture delivery, financing and easy online ordering. Add style and fun to your space with rocking, accent and swivel chairs. ",
+		"photo": "https://www.my-furniture.com/media/wysiwyg/blocks/en/my-occasional-chairs-en.jpg"
 	},
 	{
 		"id": 4,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?4"
+		"name": "SOFAS",
+		"description": "Explore our beautiful, well-crafted collection of sofas with everything from sleek, contemporary recliners to cosy corner sofas and much more.",
+		"photo": "https://www.my-furniture.com/media/wysiwyg/blocks/en/my-sofas-en.jpg"
 	},
 	{
 		"id": 5,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?5"
+		"name": "BEDS",
+		"description": "Our murade assortment ranges from baby cots to box spring beds and everything else you need, such as mattresses, toppers, pillows and spring wood frames.",
+		"photo": "https://www.my-furniture.com/media/wysiwyg/blocks/en/beds-en.jpg"
 	},
 	{
 		"id": 6,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/640/480?6"
+		"name": "GLASS FURNITURE",
+		"description": "Stories about glass furniture and its design, such as coloured glass table legs, transparent cabinets and wardrobes, and reflective surfaces. ",
+		"photo": "https://www.my-furniture.com/media/wysiwyg/blocks/en/my-glass-furniture-en.jpg"
 	}
 ]

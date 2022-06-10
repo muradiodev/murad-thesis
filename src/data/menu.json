@@ -1,22 +1,42 @@
 [
 	{
-		"label": "Menu1",
+		"label": "Living room",
 		"link": "/"
 	},
 	{
-		"label": "Menu 2",
+		"label": "Dining room",
 		"link": "/"
 	},
 	{
-		"label": "Menu 3",
+		"label": "Bedroom",
 		"link": "/"
 	},
 	{
-		"label": "Menu 4",
+		"label": "Sofas",
 		"link": "/"
 	},
 	{
-		"label": "Menu 5",
+		"label": "Chairs",
+		"link": "/"
+	},
+	{
+		"label": "Mirrored furniture",
+		"link": "/"
+	},
+	{
+		"label": "Beds",
+		"link": "/"
+	},
+	{
+		"label": "Lighting",
+		"link": "/"
+	},
+	{
+		"label": "Accessories",
+		"link": "/"
+	},
+	{
+		"label": "Bathroom",
 		"link": "/"
 	}
 

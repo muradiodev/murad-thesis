@@ -1,38 +1,38 @@
 [
 	{
 		"id": 1,
-		"name": "name",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?1",
-		"price": 40,
-		"oldPrice": 50,
+		"name": "1. Novogratz Brittany Sofa Futon",
+		"description": "Everyone loves a pretty couch these days, and this can include a futon. Whether it’s for a dorm room, your first apartment, or rounding out an inviting guest room, this chic Novogratz futon—you really wouldn’t know it’s a futon!—marries form and function in an elegant and comfortable way.",
+		"photo": "https://www.gannett-cdn.com/presto/2021/08/25/USAT/891551d7-ec0f-4ad9-8a45-9fbcdc56f287-H1.png?width=2560",
+		"price": 299.99,
+		"oldPrice": 449.99,
 		"discount": 20
 	},
 	{
 		"id": 2,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?2",
-		"price": 76.5,
-		"oldPrice": 90,
+		"name": "2. Furmax Mid-Century Plastic Dining Chairs",
+		"description": "You can order them in several colors, including orange and red for anyone feeling bold. Plus, they can be used on patios or in craft rooms in addition to dining areas.  ",
+		"photo": "https://www.gannett-cdn.com/presto/2021/08/25/USAT/53381872-5a25-4889-abb9-fbb4e0b7ec31-H2.png?width=2560",
+		"price": 94.99,
+		"oldPrice": 122,
 		"discount": 15
 	},
 	{
 		"id": 3,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?3",
-		"price": 90,
-		"oldPrice": 100,
+		"name": "3. Hodedah Kitchen Island",
+		"description": "This contemporary kitchen island also has a built-in spice rack, towel hanger, drawer, and cabinet, conveniently allowing you to store pantry items, pots and pans, or small countertop appliances.  ",
+		"photo": "https://www.gannett-cdn.com/presto/2021/08/25/USAT/6364ad67-95fd-4a11-b0d9-d83f75f823a0-H3.png?width=2560",
+		"price": 97.12,
+		"oldPrice": 172.99,
 		"discount": 10
 	},
 	{
 		"id": 4,
-		"name": "name 2",
-		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?4",
-		"price": 40,
-		"oldPrice": 40,
+		"name": "4. Vasagle Lowell Nightstand",
+		"description": "The Lowell Nightstand features a slatted door and an open shelf (or two, if you use the adjustable one behind the door). There is plenty of room for a small speaker, a stack of books, and a salt lamp. Depending on the stain you like, this nightstand has either contemporary or rustic appeal.",
+		"photo": "https://www.gannett-cdn.com/presto/2021/08/25/USAT/790e2f65-094f-4992-a1e5-0302052f847a-H4.png?width=2560",
+		"price": 72.99,
+		"oldPrice": 135.99,
 		"discount": 0
 	}
 ]

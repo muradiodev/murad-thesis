@@ -3,7 +3,7 @@
 		"id": 1,
 		"name": "Summer 2022",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?101",
+		"photo": "https://s3.amazonaws.com/zaius-images/g8ix39nS6_CMGFe4cHFeJw/_/ELezC8RqqrpDH7WD1DIDrz8xjaN088vwBYeucGxYV5y.jpg",
 		"photos": [
 			"https://picsum.photos/480/480?12",
 			"https://picsum.photos/480/480?13",
@@ -14,7 +14,7 @@
 		"id": 2,
 		"name": "Autumn 2022",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?102",
+		"photo": "https://i.pinimg.com/originals/40/84/d6/4084d625ac203a546f1598f3d853af45.jpg",
 		"photos": [
 			"https://picsum.photos/480/480?22",
 			"https://picsum.photos/480/480?23",
@@ -25,7 +25,7 @@
 		"id": 3,
 		"name": "Winter 2022",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?103",
+		"photo": "https://www.bruno-wickart.ch/blog/wp-content/uploads/2021/10/HAL_HomeStories_1200x1200.jpg",
 		"photos": [
 			"https://picsum.photos/480/480?32",
 			"https://picsum.photos/480/480?33",
@@ -36,7 +36,7 @@
 		"id": 4,
 		"name": "Spring 2023",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra semper turpis. ",
-		"photo": "https://picsum.photos/480/480?104",
+		"photo": "https://www.indecortrends.com/wp-content/uploads/2022/01/Trendy-colors-for-New-Year-2023-1.2.jpg",
 		"photos": [
 			"https://picsum.photos/480/480?42",
 			"https://picsum.photos/480/480?43",
