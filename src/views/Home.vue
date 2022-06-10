@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-md-3">
         <h2><img src="https://i.postimg.cc/Znrk15yc/484.png" style="width: 100%" alt="murade" /></h2>
+           
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-4">
@@ -26,7 +27,6 @@
     </ul>
   </div>
   <HeroBanner />
-  <hr />
   <section
     :class="{
       'journey-enabled': journeyIsActive,
@@ -47,6 +47,12 @@
           </div>
 
           <div class="mt-3">
+            <button
+              class="btn btn-sm btn-outline-dark me-3"
+              @click.prevent="activateCommentModal(1)"
+            >
+              comment
+            </button>
             <button
               class="btn btn-sm btn-outline-primary me-3"
               @click.prevent="activateModule(2)"
@@ -86,6 +92,12 @@
           </div>
 
           <div class="mt-3">
+            <button
+              class="btn btn-sm btn-outline-dark me-3"
+              @click.prevent="activateCommentModal(2)"
+            >
+              comment
+            </button>
             <button
               class="btn btn-sm btn-outline-primary me-3"
               @click.prevent="activateModule(1)"
@@ -131,6 +143,12 @@
 
           <div class="mt-3">
             <button
+              class="btn btn-sm btn-outline-dark me-3"
+              @click.prevent="activateCommentModal(3)"
+            >
+              comment
+            </button>
+            <button
               class="btn btn-sm btn-outline-primary me-3"
               @click.prevent="activateModule(2)"
             >
@@ -160,8 +178,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-                <h2><img src="https://i.postimg.cc/Znrk15yc/484.png" style="width: 100%" alt="murade" /></h2>
-                © Copyright 2022 
+           <h2><img src="https://i.postimg.cc/Znrk15yc/484.png" style="width: 100%" alt="murade" /></h2>
+                   © Copyright 2022 
         </div>
       </div>
     </div>
@@ -201,7 +219,7 @@
   >
     <form @submit.prevent="personalInfoModalSubmit">
       <div class="mb-3">
-        <label for="name">Full Name *</label>
+        <label for="name">Name</label>
         <div>
           <input
             type="text"
@@ -213,7 +231,7 @@
         </div>
       </div>
       <div class="mb-3">
-        <label for="email">Email *</label>
+        <label for="email">Email</label>
         <div>
           <input
             type="email"
@@ -242,7 +260,7 @@
 
       <div class="mb-3">
         <label for="range"
-          >Please rate level of your <em><strong>technical skills</strong></em>:</label
+           >Please rate level of your <em><strong>technical skills</strong></em>:</label
         >
         <div class="row mt-2">
           <div class="col-1">Bad</div>
@@ -276,7 +294,7 @@
   </Modal>
   <Modal
     v-if="finishModalIsOpen"
-    size="md"
+    size="lg"
     title="Finish journey"
     @modalClose="finishModalIsOpen = false"
     :z-index="960"
@@ -326,6 +344,41 @@
       </div>
     </form>
   </Modal>
+
+  <Modal
+    v-if="commentModalIsOpen"
+    size="md"
+    title="Comment"
+    @modalClose="commentModalIsOpen = false"
+    :z-index="960"
+  >
+    <form @submit.prevent="commentModalIsOpen = false">
+      <div class="mb-3">
+        <label for="range">Choose alternative</label>
+        <select v-model.number="commentModalVariant" class="form-control">
+          <option value="1">variant 1</option>
+          <option value="2">variant 2</option>
+          <option value="3">variant 3</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="comment">Suggestions for improvement? (optional) </label>
+        <div>
+          <textarea
+            class="form-control"
+            v-model.trim="commentModalComment"
+            id="comment"
+            rows="7"
+          >
+          </textarea>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-success">apply</button>
+      </div>
+    </form>
+  </Modal>
 </template>
 
 <script>
@@ -363,6 +416,8 @@ export default {
       personalInfoModalIsOpen: false,
       journeyIsActive: false,
       finishModalIsOpen: false,
+      commentModalIsOpen: false,
+      commentModalIndex: 0,
 
       activeModule: 0,
 
@@ -381,16 +436,85 @@ export default {
       m1: 1,
       m2: 1,
       m3: 1,
+      m1Comment: "",
+      m2Comment: "",
+      m3Comment: "",
       comment: "",
       skillRate: 0,
       satScore: 0,
     };
   },
+  computed: {
+    commentModalVariant: {
+      get() {
+        let val = 0;
+        switch (this.commentModalIndex) {
+          case 1:
+            val = this.m1;
+            break;
+          case 2:
+            val = this.m2;
+            break;
+          case 3:
+            val = this.m3;
+            break;
+        }
+        return val;
+      },
+      set(value) {
+        switch (this.commentModalIndex) {
+          case 1:
+            this.m1 = value;
+            break;
+          case 2:
+            this.m2 = value;
+            break;
+          case 3:
+            this.m3 = value;
+            break;
+          default:
+            0;
+        }
+      },
+    },
+    commentModalComment: {
+      get() {
+        let val = "";
+        switch (this.commentModalIndex) {
+          case 1:
+            val = this.m1Comment;
+            break;
+          case 2:
+            val = this.m2Comment;
+            break;
+          case 3:
+            val = this.m3Comment;
+            break;
+        }
+        return val;
+      },
+      set(value) {
+        switch (this.commentModalIndex) {
+          case 1:
+            this.m1Comment = value;
+            break;
+          case 2:
+            this.m2Comment = value;
+            break;
+          case 3:
+            this.m3Comment = value;
+            break;
+          default:
+            0;
+        }
+      },
+    },
+  },
   methods: {
     startJourney() {
       customAsk(
         "Info",
-        "Please consider that your submitted Feedback will be kept and used in Future for design improvement process. If you are willing to help us to improve our design of product, please accept otherwise decline! ",
+        "Please consider that your submitted Feedback will be kept and used in Future for design improvement process. If you are willing to help us to improve our design of  product, please accept otherwise decline!",
         "question",
         () => {
           this.personalInfoModalIsOpen = true;
@@ -426,8 +550,11 @@ export default {
         skillRate: this.skillRate,
         satScore: this.satScore,
         m1: this.m1,
+        m1desc: this.m1Comment,
         m2: this.m2,
+        m2desc: this.m2Comment,
         m3: this.m3,
+        m3desc: this.m3Comment,
         gender: this.gender,
         finaldesc: this.comment,
         startTime: this.startTime,
@@ -436,7 +563,7 @@ export default {
 
       submitData(data).then(({ code, message }) => {
         if (code === 200) {
-          customAlert(`Success`, "Thanks for your feedback!", "success", () => {
+          customAlert(`Success`, "Thanks for feedback", "success", () => {
             this.journeyIsActive = false;
             this.finishModalIsOpen = false;
             this.activeModule = 0;
@@ -452,6 +579,12 @@ export default {
         this.activeModule = id;
 
         document.getElementById("section_" + id).scrollIntoView();
+      }
+    },
+    activateCommentModal(id) {
+      if (this.journeyIsActive) {
+        this.commentModalIsOpen = true;
+        this.commentModalIndex = id;
       }
     },
 
@@ -500,7 +633,7 @@ export default {
 
 .stat-journey-button {
   position: fixed;
-  right: 0;
+  right: 10px;
   top: 50%;
   color: purple;
   border: 3px dashed purple;
@@ -513,15 +646,21 @@ export default {
   transform: rotate(-90deg);
   /* Legacy vendor prefixes that you probably don't need... */
   /* Safari */
-  -webkit-transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
   /* Firefox */
-  -moz-transform: rotate(-90deg);
+  -moz-transform: rotate(90deg);
   /* IE */
-  -ms-transform: rotate(-90deg);
+  -ms-transform: rotate(90deg);
   /* Opera */
-  -o-transform: rotate(-90deg);
+  -o-transform: rotate(90deg);
   /* Internet Explorer */
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
 
   &:hover {
     background: purple;
@@ -552,14 +691,14 @@ section {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1000;
+    z-index: 800;
   }
 
   .toolbox {
     position: absolute;
     right: 10px;
     top: 10px;
-    z-index: 1000;
+    z-index: 700;
     width: 300px;
   }
 }
